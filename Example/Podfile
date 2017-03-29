@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'VerifyURL_Example' do
+  pod 'VerifyURL', :path => '../'
+
+  target 'VerifyURL_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
