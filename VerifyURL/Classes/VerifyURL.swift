@@ -40,7 +40,7 @@ public class VerifyURL  {
                 return true
             }
         } else {
-            var a = ["state":0,"stateCode":11]
+            let a = ["state":0,"stateCode":11]
             print(a)
             print(dicToJSON(dict: a ))
             return false
