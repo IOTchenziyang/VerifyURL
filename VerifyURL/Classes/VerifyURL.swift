@@ -53,10 +53,10 @@ public class VerifyURL  {
     public func setAppKey(_ appId:String,appSecret:String) -> Void {
         
 
-        let appid = UserDefaults.standard.string(forKey: "appId")
+      //  let appid = UserDefaults.standard.string(forKey: "appId")
         UserDefaults.standard.set(appId, forKey: "appId")
         
-        let appsecret = UserDefaults.standard.string(forKey: "appSecret")
+       // let appsecret = UserDefaults.standard.string(forKey: "appSecret")
         UserDefaults.standard.set(appSecret, forKey: "appSecret")
     }
     
@@ -66,9 +66,9 @@ public class VerifyURL  {
     
     public func VerifyURL(url:String,callback:@escaping ([String:Any]) -> Void)   {
         
-        var appId = UserDefaults.standard.string(forKey: "appId")!
+        let appId = UserDefaults.standard.string(forKey: "appId")!
         
-        var appSecret = UserDefaults.standard.string(forKey: "appSecret")!
+        let appSecret = UserDefaults.standard.string(forKey: "appSecret")!
         
         var returnvalue = [String:Any]()
         //判断网络是否连通
@@ -78,8 +78,8 @@ public class VerifyURL  {
         }
         
         //判断appid与appsecret是否填写
-        if appId == nil {
-            var a = ["state":0,"stateCode":21]
+        if appId == "" {
+            let a = ["state":0,"stateCode":21]
             
             print(dicToJSON(dict: a))
             
@@ -87,12 +87,12 @@ public class VerifyURL  {
             
         }
         
-        var timeStamp = Int(Date().timeIntervalSince1970)
+        let timeStamp = Int(Date().timeIntervalSince1970)
         
         
-        var appSignNotMD5 = appSecret + "|" + "\(timeStamp)" + "|safeqr"
+        let appSignNotMD5 = appSecret + "|" + "\(timeStamp)" + "|safeqr"
         
-        var appSign = appSignNotMD5.md5()
+        let appSign = appSignNotMD5.md5()
         
         
        // private static String createAppSign(String appSecret, long timestamp){
@@ -101,7 +101,7 @@ public class VerifyURL  {
         
         print(appId + " " + appSecret)
         
-        var paramter = ["appid":appId,"appSign":appSign,"token":"sd5fads5f45s1d65f1as","url":url,"time":"\(timeStamp)"]
+        let paramter = ["appid":appId,"appSign":appSign,"token":"sd5fads5f45s1d65f1as","url":url,"time":"\(timeStamp)"]
         //后台url
         //"http://open.anxinsao.com/api/App/VerifyURL"
         
