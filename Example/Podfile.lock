@@ -1,0 +1,25 @@
+PODS:
+  - Alamofire (4.4.0)
+  - CryptoSwift (0.6.7)
+  - ReachabilitySwift (3)
+  - VerifyURL (0.1.0):
+    - Alamofire
+    - CryptoSwift
+    - ReachabilitySwift (~> 3)
+
+DEPENDENCIES:
+  - VerifyURL (from `../`)
+
+EXTERNAL SOURCES:
+  VerifyURL:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  CryptoSwift: 685ae257941e5447474348a2b545583e1a16b573
+  ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
+  VerifyURL: bb661af4b068d5f634eb0c81ae2eac9d3bc4417c
+
+PODFILE CHECKSUM: 764825e2aab3d6e74de89e5adf1c495c3ee94086
+
+COCOAPODS: 1.2.0.beta.1

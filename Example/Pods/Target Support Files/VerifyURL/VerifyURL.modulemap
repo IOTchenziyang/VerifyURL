@@ -1,0 +1,6 @@
+framework module VerifyURL {
+  umbrella header "VerifyURL-umbrella.h"
+
+  export *
+  module * { export * }
+}

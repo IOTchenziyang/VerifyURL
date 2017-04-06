@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'VerifyURL'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of VerifyURL.'
+  s.summary          = '检测网页的安全性'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+'安心扫SDK提供了网站检测接口，可以检测提供的网页地址是否为钓鱼网址。'
                        DESC
 
   s.homepage         = 'https://github.com/IOTchenziyang/VerifyURL'
@@ -38,5 +38,7 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+   s.dependency 'Alamofire'
+   s.dependency 'CryptoSwift'
+   s.dependency 'ReachabilitySwift', '~> 3'
 end

@@ -1,0 +1,33 @@
+{
+  "name": "VerifyURL",
+  "version": "0.1.0",
+  "summary": "A short description of VerifyURL.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/IOTchenziyang/VerifyURL",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "IOTchenziyang": "461019012@163.com"
+  },
+  "source": {
+    "git": "https://github.com/IOTchenziyang/VerifyURL.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "VerifyURL/Classes/**/*",
+  "dependencies": {
+    "Alamofire": [
+
+    ],
+    "CryptoSwift": [
+
+    ],
+    "ReachabilitySwift": [
+      "~> 3"
+    ]
+  }
+}
